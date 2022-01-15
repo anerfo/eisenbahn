@@ -61,23 +61,24 @@ Public Class MainWindow
 
         System.Threading.Thread.CurrentThread.Name = "MainThread"
 #If DEBUG Then
-        Dim pluginPaths() As String = { _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\V5PluginKompaitibilitaet\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Communication\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Plugin2\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Stellwerke\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Steuerpulte\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Daten\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Stellwerk\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\KontaktSimulator\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\V5PluginLoader\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Weichensteuerung\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\KlausEBspecific\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\driversCabSim\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\EisenbahnServer\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\DMXServer\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\DMXController\bin\Debug", _
-                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Plugin1\bin\Debug"}
+        Dim pluginPaths() As String = {
+                "D:\Programmieren\VB Projekte\EisenbahnV4\V5PluginKompaitibilitaet\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Communication\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Plugin2\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Stellwerke\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Steuerpulte\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Daten\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Stellwerk\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\KontaktSimulator\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\V5PluginLoader\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Weichensteuerung\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\KlausEBspecific\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\driversCabSim\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\EisenbahnServer\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\DMXServer\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\DMXController\bin\Debug",
+                "D:\Programmieren\VB Projekte\EisenbahnV4\Plugins\Plugin1\bin\Debug",
+                Application.StartupPath & "\Plugins\Controls"}
 #Else
         Dim pluginPaths() As String = {Application.StartupPath & "\Plugins\Controls"}
 #End If

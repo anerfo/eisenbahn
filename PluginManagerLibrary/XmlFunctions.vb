@@ -244,7 +244,7 @@ Public NotInheritable Class XmlFunctions
     ''' <returns>Wert des Attributes</returns>
     ''' <remarks></remarks>
     Public Shared Function getAttributValueFromNode(ByVal xmlNode As Xml.XmlNode, ByVal AttributName As String) As String
-        Return xmlNode.Attributes(AttributName).Value
+        Return xmlNode.Attributes(AttributName)?.Value
     End Function
 
     ''' <summary>
